@@ -1,13 +1,12 @@
 import UIKit
 
-class HomeViewController: UIViewController {
+class ProductDetailViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
 }
-
