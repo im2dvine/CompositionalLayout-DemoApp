@@ -41,6 +41,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126A2BBE29390FBA003149D5 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		126A2BBF29390FCB003149D5 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		126A2BC029390FD5003149D5 /* Deals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Deals;
+			sourceTree = "<group>";
+		};
+		126A2BC129390FF0003149D5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		126A2BC229390FFA003149D5 /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Featured;
+			sourceTree = "<group>";
+		};
+		126A2BC329391016003149D5 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		126A2BC429391020003149D5 /* Specifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Specifications;
+			sourceTree = "<group>";
+		};
+		126A2BC529391027003149D5 /* Variant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Variant;
+			sourceTree = "<group>";
+		};
+		126A2BC62939102D003149D5 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		126A2BC729391037003149D5 /* ImageHeader */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageHeader;
+			sourceTree = "<group>";
+		};
 		12A25EB829386929001ECFEE = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +132,8 @@
 			children = (
 				12A25ED8293869A2001ECFEE /* App */,
 				12A25EDC29386A62001ECFEE /* Models */,
-				12A25EDB29386A40001ECFEE /* Controllers */,
 				12A25EDA29386A11001ECFEE /* Views */,
-				12A25ECA29386929001ECFEE /* Main.storyboard */,
+				12A25EDB29386A40001ECFEE /* Controllers */,
 				12A25ED9293869B1001ECFEE /* Utilities */,
 				12A25ED22938692B001ECFEE /* Info.plist */,
 			);
@@ -95,6 +164,7 @@
 				12A25EE1293906DF001ECFEE /* Home */,
 				12A25EE2293906E6001ECFEE /* ProductDetails */,
 				12A25ECF2938692B001ECFEE /* LaunchScreen.storyboard */,
+				12A25ECA29386929001ECFEE /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +189,10 @@
 		12A25EE1293906DF001ECFEE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				126A2BBF29390FCB003149D5 /* Header */,
+				126A2BC029390FD5003149D5 /* Deals */,
+				126A2BC129390FF0003149D5 /* Categories */,
+				126A2BC229390FFA003149D5 /* Featured */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -126,6 +200,11 @@
 		12A25EE2293906E6001ECFEE /* ProductDetails */ = {
 			isa = PBXGroup;
 			children = (
+				126A2BC729391037003149D5 /* ImageHeader */,
+				126A2BC62939102D003149D5 /* Details */,
+				126A2BC529391027003149D5 /* Variant */,
+				126A2BC429391020003149D5 /* Specifications */,
+				126A2BC329391016003149D5 /* Cart */,
 			);
 			path = ProductDetails;
 			sourceTree = "<group>";
@@ -133,6 +212,7 @@
 		12A25EE329390856001ECFEE /* SupportingViews */ = {
 			isa = PBXGroup;
 			children = (
+				126A2BBE29390FBA003149D5 /* SearchBar */,
 			);
 			path = SupportingViews;
 			sourceTree = "<group>";
