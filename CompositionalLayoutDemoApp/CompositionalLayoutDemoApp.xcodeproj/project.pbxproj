@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		126A2BC929391183003149D5 /* Theme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126A2BC829391183003149D5 /* Theme.xcassets */; };
 		12A25EC529386929001ECFEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A25EC429386929001ECFEE /* AppDelegate.swift */; };
 		12A25EC729386929001ECFEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A25EC629386929001ECFEE /* SceneDelegate.swift */; };
 		12A25EC929386929001ECFEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A25EC829386929001ECFEE /* HomeViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		126A2BC829391183003149D5 /* Theme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Theme.xcassets; sourceTree = "<group>"; };
 		12A25EC129386929001ECFEE /* CompositionalLayoutDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositionalLayoutDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A25EC429386929001ECFEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A25EC629386929001ECFEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,10 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				12A25ED8293869A2001ECFEE /* App */,
+				12A25ED9293869B1001ECFEE /* Utilities */,
 				12A25EDC29386A62001ECFEE /* Models */,
 				12A25EDA29386A11001ECFEE /* Views */,
 				12A25EDB29386A40001ECFEE /* Controllers */,
-				12A25ED9293869B1001ECFEE /* Utilities */,
 				12A25ED22938692B001ECFEE /* Info.plist */,
 			);
 			path = CompositionalLayoutDemoApp;
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				12A25ECD2938692B001ECFEE /* Assets.xcassets */,
+				126A2BC829391183003149D5 /* Theme.xcassets */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12A25ED12938692B001ECFEE /* LaunchScreen.storyboard in Resources */,
+				126A2BC929391183003149D5 /* Theme.xcassets in Resources */,
 				12A25ECE2938692B001ECFEE /* Assets.xcassets in Resources */,
 				12A25ECC29386929001ECFEE /* Main.storyboard in Resources */,
 			);
