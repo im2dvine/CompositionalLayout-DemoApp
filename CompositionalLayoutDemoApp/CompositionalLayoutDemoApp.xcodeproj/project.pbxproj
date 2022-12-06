@@ -27,6 +27,8 @@
 		12A25ED12938692B001ECFEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A25ECF2938692B001ECFEE /* LaunchScreen.storyboard */; };
 		12A25EDE29386BA3001ECFEE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A25EDD29386BA3001ECFEE /* Item.swift */; };
 		12A25EE0293901AA001ECFEE /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A25EDF293901AA001ECFEE /* Section.swift */; };
+		12BCDA70293EADEA00E4540B /* ImageHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BCDA6E293EADEA00E4540B /* ImageHeaderCell.swift */; };
+		12BCDA71293EADEA00E4540B /* ImageHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12BCDA6F293EADEA00E4540B /* ImageHeaderCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		12A25ED22938692B001ECFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12A25EDD29386BA3001ECFEE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		12A25EDF293901AA001ECFEE /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		12BCDA6E293EADEA00E4540B /* ImageHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHeaderCell.swift; sourceTree = "<group>"; };
+		12BCDA6F293EADEA00E4540B /* ImageHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageHeaderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 		126A2BC729391037003149D5 /* ImageHeader */ = {
 			isa = PBXGroup;
 			children = (
+				12BCDA6E293EADEA00E4540B /* ImageHeaderCell.swift */,
+				12BCDA6F293EADEA00E4540B /* ImageHeaderCell.xib */,
 			);
 			path = ImageHeader;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12BCDA71293EADEA00E4540B /* ImageHeaderCell.xib in Resources */,
 				12A25ED12938692B001ECFEE /* LaunchScreen.storyboard in Resources */,
 				126A2BDF29391EB5003149D5 /* CategoriesCell.xib in Resources */,
 				126A2BC929391183003149D5 /* Theme.xcassets in Resources */,
@@ -330,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12BCDA70293EADEA00E4540B /* ImageHeaderCell.swift in Sources */,
 				126A2BD229391DB5003149D5 /* SearchBarCell.swift in Sources */,
 				12A25EE0293901AA001ECFEE /* Section.swift in Sources */,
 				12A25EDE29386BA3001ECFEE /* Item.swift in Sources */,
