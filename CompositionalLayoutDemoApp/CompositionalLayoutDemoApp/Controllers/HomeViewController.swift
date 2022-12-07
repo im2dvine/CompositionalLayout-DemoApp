@@ -117,8 +117,8 @@ class HomeViewController: UIViewController {
     
 }
 
-extension UIViewController: UICollectionViewDelegate {
-    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+ extension HomeViewController: UICollectionViewDelegate {
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard: UIStoryboard = UIStoryboard(name: "ProductDetail", bundle: nil)
         
         let vc = storyboard.instantiateViewController(withIdentifier: "ProductDetailViewController") as! ProductDetailViewController
