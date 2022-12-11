@@ -6,6 +6,7 @@ protocol LayoutSection {
     static func deals() -> NSCollectionLayoutSection
     static func categories() -> NSCollectionLayoutSection
     static func featured() -> NSCollectionLayoutSection
+    static func imageheader() -> NSCollectionLayoutSection
 }
 
 struct LayoutSectionFactory: LayoutSection {
@@ -91,4 +92,20 @@ struct LayoutSectionFactory: LayoutSection {
         
         return section
     }
+    
+    static func imageheader() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+        
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(366))
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        
+        return section
+    }
+    
 }

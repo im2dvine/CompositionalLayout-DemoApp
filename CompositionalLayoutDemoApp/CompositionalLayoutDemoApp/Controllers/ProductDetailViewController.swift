@@ -17,20 +17,7 @@ class ProductDetailViewController: UIViewController {
             let sectionType = snapshot.sectionIdentifiers[sectionIndex].type
             
             switch sectionType {
-            case .imageheader:
-                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
-                
-                let item = NSCollectionLayoutItem(layoutSize: itemSize)
-                
-                let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(366))
-                
-                let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-                group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0)
-                
-                let section = NSCollectionLayoutSection(group: group)
-                
-                return section
-                
+            case .imageheader: return LayoutSectionFactory.imageheader()
             default: return nil
             }
         }
@@ -50,8 +37,11 @@ class ProductDetailViewController: UIViewController {
     }
 
     private func setUpCollectionView() {
-        collectionView.register(UINib(nibName: "ImageHeaderCell", bundle: .main), forCellWithReuseIdentifier: "ImageHeaderCell")
+        let cells: [RegisterableView] = [
+            .nib(ImageHeaderCell.self)
+        ]
         
+        collectionView.register(cells: cells)
         collectionView.collectionViewLayout = collectionViewLayout
     }
     

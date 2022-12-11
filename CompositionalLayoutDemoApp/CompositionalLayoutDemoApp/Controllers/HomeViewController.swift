@@ -77,11 +77,8 @@ class HomeViewController: UIViewController {
             case .featured:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCell", for: indexPath)
                 return cell
-                
             default: return nil
-                
             }
-            
         }
         
         let sections = [
@@ -104,7 +101,6 @@ class HomeViewController: UIViewController {
             Section(type: .featured, items: [
                 Item(), Item(), Item(), Item()
             ])
-            
         ]
         
         
@@ -112,9 +108,7 @@ class HomeViewController: UIViewController {
         snapshot.appendSections(sections)
         sections.forEach {snapshot.appendItems($0.items, toSection: $0) }
         dataSource.apply(snapshot, animatingDifferences: false)
-        
     }
-    
 }
 
  extension HomeViewController: UICollectionViewDelegate {
@@ -125,6 +119,5 @@ class HomeViewController: UIViewController {
         
         vc.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(vc, animated: true)
-        
     }
 }
