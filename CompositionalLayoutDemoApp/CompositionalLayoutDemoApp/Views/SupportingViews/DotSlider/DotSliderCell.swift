@@ -1,5 +1,5 @@
 //
-//  SliderBarsCell.swift
+//  DotSliderCell.swift
 //  CompositionalLayoutDemoApp
 //
 //  Created by Daesy Vences on 12/11/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SliderBarsCell: UICollectionViewCell {
+class DotSliderCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -18,7 +18,9 @@ struct Section: Hashable {
         case header
         case searchbar
         case deals
+        case dotslider
         case categories
+        case featuredheader
         case featured
         case imageheader
         case details
@@ -38,7 +40,9 @@ struct Section: Hashable {
         static let header = SectionType(rawValue: Section.ItemSectionType.header.rawValue)
         static let searchbar = SectionType(rawValue: Section.ItemSectionType.searchbar.rawValue)
         static let deals = SectionType(rawValue: Section.ItemSectionType.deals.rawValue)
+        static let dotslider = SectionType(rawValue: Section.ItemSectionType.dotslider.rawValue)
         static let categories = SectionType(rawValue: Section.ItemSectionType.categories.rawValue)
+        static let featuredheader = SectionType(rawValue: Section.ItemSectionType.featuredheader.rawValue)
         static let featured = SectionType(rawValue: Section.ItemSectionType.featured.rawValue)
         static let imageheader = SectionType(rawValue: Section.ItemSectionType.imageheader.rawValue)
         static let details = SectionType(rawValue: Section.ItemSectionType.details.rawValue)

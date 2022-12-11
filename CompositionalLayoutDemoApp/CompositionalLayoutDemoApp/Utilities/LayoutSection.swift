@@ -4,7 +4,9 @@ protocol LayoutSection {
     static func header() -> NSCollectionLayoutSection
     static func searchbar() -> NSCollectionLayoutSection
     static func deals() -> NSCollectionLayoutSection
+    static func dotslider() -> NSCollectionLayoutSection
     static func categories() -> NSCollectionLayoutSection
+    static func featuredheader() -> NSCollectionLayoutSection
     static func featured() -> NSCollectionLayoutSection
     static func imageheader() -> NSCollectionLayoutSection
 }
@@ -58,6 +60,22 @@ struct LayoutSectionFactory: LayoutSection {
         return section
     }
     
+    static func dotslider() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+        
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(4))
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+        
+        return section
+    }
+    
     static func categories() -> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         
@@ -72,6 +90,22 @@ struct LayoutSectionFactory: LayoutSection {
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .groupPaging
         section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 230, trailing: 0)
+        
+        return section
+    }
+    
+    static func featuredheader() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+        
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(54))
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 28, bottom: 18, trailing: 28)
         
         return section
     }

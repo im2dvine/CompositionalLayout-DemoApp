@@ -20,7 +20,9 @@ class HomeViewController: UIViewController {
                 case .header: return LayoutSectionFactory.header()
                 case .searchbar: return LayoutSectionFactory.searchbar()
                 case .deals: return LayoutSectionFactory.deals()
+                case .dotslider: return LayoutSectionFactory.dotslider()
                 case .categories: return LayoutSectionFactory.categories()
+                case .featuredheader: return LayoutSectionFactory.featuredheader()
                 case .featured: return LayoutSectionFactory.featured()
                 default: return nil
             }
@@ -44,6 +46,7 @@ class HomeViewController: UIViewController {
             .nib(HeaderCell.self),
             .nib(SearchBarCell.self),
             .nib(DealsCell.self),
+            .nib(DotSliderCell.self),
             .nib(CategoriesCell.self),
             .nib(FeaturedCell.self),
         ]
@@ -71,8 +74,14 @@ class HomeViewController: UIViewController {
             case .deals:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DealsCell", for: indexPath)
                 return cell
+            case .dotslider:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DotSliderCell", for: indexPath)
+                return cell
             case .categories:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCell", for: indexPath)
+                return cell
+            case .featuredheader:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedHeaderCell", for: indexPath)
                 return cell
             case .featured:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCell", for: indexPath)
@@ -92,6 +101,10 @@ class HomeViewController: UIViewController {
             
             Section(type: .deals, items: [
                 Item(), Item(), Item()
+            ]),
+            
+            Section(type: .dotslider, items: [
+                Item()
             ]),
             
             Section(type: .categories, items: [
