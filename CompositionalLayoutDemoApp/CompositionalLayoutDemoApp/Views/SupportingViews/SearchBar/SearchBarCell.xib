@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,7 +18,40 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lps-Go-tAW">
                         <rect key="frame" x="0.0" y="0.0" width="318" height="54"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EBZ-RO-0Xf">
+                                <rect key="frame" x="279" y="15.666666666666664" width="24" height="23"/>
+                                <color key="tintColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="4Jf-Hi-H8O"/>
+                                    <constraint firstAttribute="width" constant="24" id="6xx-Q4-5yp"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search man fashion.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7M-26-How">
+                                <rect key="frame" x="23" y="15" width="151.66666666666666" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="FkM-XT-oN6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EBZ-RO-0Xf" secondAttribute="trailing" constant="15" id="31C-yR-vr4"/>
+                            <constraint firstAttribute="bottom" secondItem="y7M-26-How" secondAttribute="bottom" constant="15" id="8ee-f2-fOs"/>
+                            <constraint firstItem="y7M-26-How" firstAttribute="top" secondItem="Lps-Go-tAW" secondAttribute="top" constant="15" id="J4H-lJ-xwx"/>
+                            <constraint firstItem="y7M-26-How" firstAttribute="leading" secondItem="Lps-Go-tAW" secondAttribute="leading" constant="23" id="cxc-Bx-NJw"/>
+                            <constraint firstAttribute="bottom" secondItem="EBZ-RO-0Xf" secondAttribute="bottom" constant="15" id="sUD-Sg-jtd"/>
+                            <constraint firstItem="EBZ-RO-0Xf" firstAttribute="top" secondItem="Lps-Go-tAW" secondAttribute="top" constant="15" id="uVT-B0-iDU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
@@ -40,8 +72,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
     </resources>
 </document>
