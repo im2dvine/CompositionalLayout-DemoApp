@@ -39,6 +39,11 @@ class HomeViewController: UIViewController {
     func initialize() {
         setUpCollectionView()
         configureDataSource()
+        setDefaults()
+    }
+    
+    func setDefaults() {
+        self.title = "Home"
     }
     
     private func setUpCollectionView() {
@@ -134,8 +139,6 @@ class HomeViewController: UIViewController {
         let storyboard: UIStoryboard = UIStoryboard(name: "ProductDetail", bundle: nil)
         
         let vc = storyboard.instantiateViewController(withIdentifier: "ProductDetailViewController") as! ProductDetailViewController
-        
-        vc.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(vc, animated: true)
     }
 }

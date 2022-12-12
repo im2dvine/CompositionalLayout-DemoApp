@@ -38,6 +38,11 @@ class ProductDetailViewController: UIViewController {
     func initialize() {
         setUpCollectionView()
         configureDataSource()
+        setDefaults()
+    }
+    
+    func setDefaults() {
+        self.title = "Detail"
     }
     
     private func setUpCollectionView() {
