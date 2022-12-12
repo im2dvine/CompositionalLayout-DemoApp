@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,7 +18,64 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dax-34-cnC">
                         <rect key="frame" x="0.0" y="0.0" width="150" height="144"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="tshirt.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jxR-70-mjZ">
+                                <rect key="frame" x="15" y="15" width="34" height="34"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="euS-no-Szc"/>
+                                    <constraint firstAttribute="width" constant="34" id="sI1-oM-S62"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="tshirt.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="J35-Zo-9oU">
+                                <rect key="frame" x="77.333333333333329" y="33" width="91.999999999999986" height="92"/>
+                                <color key="tintColor" red="0.22352941176470587" green="0.28235294117647058" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="KuG-7i-Zq2"/>
+                                    <constraint firstAttribute="width" constant="92" id="c1g-8J-kNJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TShirt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5e-AU-jmh">
+                                <rect key="frame" x="15.000000000000004" y="62" width="34.333333333333343" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="P4X-N7-36i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Man Fashion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCN-fW-Ycc">
+                                <rect key="frame" x="15" y="83" width="97" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="fKt-FG-4GS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="312 Collections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9k-iy-yKW">
+                                <rect key="frame" x="15" y="107" width="83.666666666666671" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="fJF-ia-DDQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16862745098039217" green="0.22352941176470587" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M5e-AU-jmh" firstAttribute="leading" secondItem="dax-34-cnC" secondAttribute="leading" constant="15" id="0Mc-HP-cBm"/>
+                            <constraint firstItem="mCN-fW-Ycc" firstAttribute="leading" secondItem="dax-34-cnC" secondAttribute="leading" constant="15" id="8Qc-Oi-MJf"/>
+                            <constraint firstItem="J35-Zo-9oU" firstAttribute="leading" secondItem="M5e-AU-jmh" secondAttribute="trailing" constant="28" id="Jwp-gg-JQV"/>
+                            <constraint firstItem="M5e-AU-jmh" firstAttribute="top" secondItem="jxR-70-mjZ" secondAttribute="bottom" constant="13" id="MM2-d8-zJ4"/>
+                            <constraint firstItem="jxR-70-mjZ" firstAttribute="top" secondItem="dax-34-cnC" secondAttribute="top" constant="15" id="Qtb-8F-Jd6"/>
+                            <constraint firstAttribute="bottom" secondItem="J35-Zo-9oU" secondAttribute="bottom" constant="19" id="TEZ-Dn-Xc7"/>
+                            <constraint firstItem="mCN-fW-Ycc" firstAttribute="top" secondItem="M5e-AU-jmh" secondAttribute="bottom" constant="3" id="Vg5-7K-aZ6"/>
+                            <constraint firstItem="k9k-iy-yKW" firstAttribute="leading" secondItem="dax-34-cnC" secondAttribute="leading" constant="15" id="ZHG-om-lri"/>
+                            <constraint firstItem="jxR-70-mjZ" firstAttribute="leading" secondItem="dax-34-cnC" secondAttribute="leading" constant="15" id="b0O-ag-Azw"/>
+                            <constraint firstItem="k9k-iy-yKW" firstAttribute="top" secondItem="mCN-fW-Ycc" secondAttribute="bottom" id="nn4-N1-ksb"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <integer key="value" value="18"/>
@@ -39,8 +95,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="tshirt.fill" catalog="system" width="128" height="98"/>
     </resources>
 </document>
