@@ -12,6 +12,7 @@ protocol LayoutSection {
     static func details() -> NSCollectionLayoutSection
     static func variant() -> NSCollectionLayoutSection
     static func specifications() -> NSCollectionLayoutSection
+    static func cart() -> NSCollectionLayoutSection
 }
 
 struct LayoutSectionFactory: LayoutSection {
@@ -184,6 +185,21 @@ struct LayoutSectionFactory: LayoutSection {
         
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        
+        return section
+    }
+    
+    static func cart() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+        
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(120))
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 35, trailing: 0)
         
         let section = NSCollectionLayoutSection(group: group)
         

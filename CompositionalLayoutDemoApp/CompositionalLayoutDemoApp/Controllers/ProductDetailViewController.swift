@@ -21,6 +21,7 @@ class ProductDetailViewController: UIViewController {
             case .details: return LayoutSectionFactory.details()
             case .variant: return LayoutSectionFactory.variant()
             case .specifications: return LayoutSectionFactory.specifications()
+            case .cart: return LayoutSectionFactory.cart()
             default: return nil
             }
         }
@@ -44,7 +45,8 @@ class ProductDetailViewController: UIViewController {
             .nib(ImageHeaderCell.self),
             .nib(DetailsCell.self),
             .nib(VariantCell.self),
-            .nib(SpecificationsCell.self)
+            .nib(SpecificationsCell.self),
+            .nib(CartCell.self)
         ]
         
         collectionView.register(cells: cells)
@@ -72,6 +74,9 @@ class ProductDetailViewController: UIViewController {
             case .specifications:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SpecificationsCell", for: indexPath)
                 return cell
+            case .cart:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CartCell", for: indexPath)
+                return cell
                 
             default: return nil
                 
@@ -93,6 +98,10 @@ class ProductDetailViewController: UIViewController {
             ]),
             
             Section(type: .specifications, items: [
+                Item()
+            ]),
+            
+            Section(type: .cart, items: [
                 Item()
             ])
             
