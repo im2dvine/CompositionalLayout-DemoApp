@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnH-Zq-ufV">
                         <rect key="frame" x="0.0" y="0.0" width="206" height="290"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fashion-redhead-women-with-suitcase-at-autumn-fiel-2022-01-13-20-31-32-utc 2" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="trX-lI-TFe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fashion-redhead-women-with-suitcase-at-autumn-fiel-2022-01-13-20-31-32-utc 2" translatesAutoresizingMaskIntoConstraints="NO" id="trX-lI-TFe">
                                 <rect key="frame" x="0.0" y="0.0" width="206" height="152"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="152" id="gcq-SO-seb"/>
