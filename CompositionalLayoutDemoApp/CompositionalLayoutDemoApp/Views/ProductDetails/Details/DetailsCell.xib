@@ -233,22 +233,22 @@
                                             </imageView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="le0-Wt-Dvh" firstAttribute="leading" secondItem="OQx-31-8WJ" secondAttribute="leading" id="4OP-eR-ZqJ"/>
                                             <constraint firstItem="hkM-od-q73" firstAttribute="leading" secondItem="le0-Wt-Dvh" secondAttribute="trailing" constant="7" id="9Ga-cc-3lr"/>
                                             <constraint firstItem="le0-Wt-Dvh" firstAttribute="top" secondItem="OQx-31-8WJ" secondAttribute="top" constant="2" id="ANH-n5-d1Q"/>
                                             <constraint firstAttribute="bottom" secondItem="hkM-od-q73" secondAttribute="bottom" id="N9w-Gw-lJA"/>
-                                            <constraint firstItem="le0-Wt-Dvh" firstAttribute="leading" secondItem="OQx-31-8WJ" secondAttribute="leading" id="ULy-a5-67x"/>
                                             <constraint firstItem="hkM-od-q73" firstAttribute="top" secondItem="OQx-31-8WJ" secondAttribute="top" id="VNB-H1-ASw"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="OQx-31-8WJ" firstAttribute="leading" secondItem="C1F-Cw-BVF" secondAttribute="leading" constant="130" id="1s7-PH-C7k"/>
                                     <constraint firstItem="OQx-31-8WJ" firstAttribute="leading" secondItem="vKR-HT-tvS" secondAttribute="trailing" constant="31" id="7gf-sG-mSj"/>
                                     <constraint firstAttribute="trailing" secondItem="OQx-31-8WJ" secondAttribute="trailing" id="Akl-Ln-w4C"/>
                                     <constraint firstItem="OQx-31-8WJ" firstAttribute="top" secondItem="vKR-HT-tvS" secondAttribute="top" id="CKT-vT-4H3"/>
                                     <constraint firstItem="vKR-HT-tvS" firstAttribute="leading" secondItem="C1F-Cw-BVF" secondAttribute="leading" id="R8o-gP-RZI"/>
                                     <constraint firstItem="vKR-HT-tvS" firstAttribute="top" secondItem="C1F-Cw-BVF" secondAttribute="top" id="Z9w-YP-ZpM"/>
                                     <constraint firstAttribute="bottom" secondItem="vKR-HT-tvS" secondAttribute="bottom" id="cZg-wc-stM"/>
+                                    <constraint firstItem="OQx-31-8WJ" firstAttribute="leading" secondItem="C1F-Cw-BVF" secondAttribute="leading" constant="130" id="gpP-ZG-A9f"/>
                                     <constraint firstAttribute="height" constant="21" id="jEs-lZ-qdZ"/>
                                 </constraints>
                             </view>
