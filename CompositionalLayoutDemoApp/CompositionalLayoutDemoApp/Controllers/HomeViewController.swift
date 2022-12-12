@@ -1,18 +1,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    
     private var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
     private var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     lazy var collectionViewLayout: UICollectionViewLayout = {
-        
-        let layout = UICollectionViewCompositionalLayout { [weak self] (sectionIndex, enviroment) ->
-            NSCollectionLayoutSection? in
+        let layout = UICollectionViewCompositionalLayout { [weak self] (sectionIndex, enviroment) -> NSCollectionLayoutSection? in
             guard let self = self else { return nil }
-            
             let snapshot = self.dataSource.snapshot()
             let sectionType = snapshot.sectionIdentifiers[sectionIndex].type
             
@@ -27,7 +23,6 @@ class HomeViewController: UIViewController {
                 default: return nil
             }
         }
-        
         return layout
     }()
     
@@ -56,17 +51,14 @@ class HomeViewController: UIViewController {
             .nib(FeaturedHeaderCell.self),
             .nib(FeaturedCell.self),
         ]
-        
         collectionView.delegate = self
         collectionView.register(cells: cells)
         collectionView.collectionViewLayout = collectionViewLayout
     }
     
     private func configureDataSource() {
-        dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView) { [weak self]
-            (collectionView, indexPath, item) in
+        dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView) { [weak self] (collectionView, indexPath, item) in
             guard let self = self else { return UICollectionViewCell() }
-            
             let  snapshot = self.dataSource.snapshot()
             let sectionType = snapshot.sectionIdentifiers[indexPath.section].type
             
@@ -97,35 +89,21 @@ class HomeViewController: UIViewController {
         }
         
         let sections = [
-            Section(type: .header, items: [
-                Item()
-            ]),
-            
-            Section(type: .searchbar, items: [
-                Item()
-            ]),
-            
-            Section(type: .deals, items: [
-                Item(), Item(), Item()
-            ]),
-            
-            Section(type: .dotslider, items: [
-                Item()
-            ]),
-            
-            Section(type: .categories, items: [
-                Item(), Item(), Item(), Item()
-            ]),
-            
-            Section(type: .featuredheader, items: [
-                Item()
-            ]), 
-            
-            Section(type: .featured, items: [
-                Item(), Item(), Item(), Item()
-            ])
+            Section(type: .header, items:
+                        [ Item() ]),
+            Section(type: .searchbar, items:
+                        [ Item() ]),
+            Section(type: .deals, items:
+                        [ Item(), Item(), Item() ]),
+            Section(type: .dotslider, items:
+                        [ Item() ]),
+            Section(type: .categories, items:
+                        [ Item(), Item(), Item(), Item() ]),
+            Section(type: .featuredheader, items:
+                        [ Item() ]),
+            Section(type: .featured, items:
+                        [ Item(), Item(), Item(), Item() ])
         ]
-        
         
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
         snapshot.appendSections(sections)
@@ -137,7 +115,6 @@ class HomeViewController: UIViewController {
  extension HomeViewController: UICollectionViewDelegate {
      func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard: UIStoryboard = UIStoryboard(name: "ProductDetail", bundle: nil)
-        
         let vc = storyboard.instantiateViewController(withIdentifier: "ProductDetailViewController") as! ProductDetailViewController
         navigationController?.pushViewController(vc, animated: true)
     }
