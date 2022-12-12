@@ -10,13 +10,40 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeaturedHeaderCell" id="gTV-IL-0wX" customClass="FeaturedHeaderCell" customModule="CompositionalLayoutDemoApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="327" height="27"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="327" height="27"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5o-Pw-ebn">
+                        <rect key="frame" x="291" y="0.0" width="36" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="jFT-g9-Dcj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.16862745098039217" green="0.22352941176470587" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-fM-rGc">
+                        <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="Bed-Zd-KYl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="D5o-Pw-ebn" secondAttribute="trailing" id="PH9-dl-8Rv"/>
+                <constraint firstItem="D5o-Pw-ebn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dQ1-g6-4P5"/>
+                <constraint firstItem="vuL-fM-rGc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e1Y-Rg-Ste"/>
+                <constraint firstAttribute="bottom" secondItem="vuL-fM-rGc" secondAttribute="bottom" id="j9V-Wu-hkN"/>
+                <constraint firstItem="vuL-fM-rGc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sM6-IN-NJx"/>
+            </constraints>
             <point key="canvasLocation" x="76.92307692307692" y="20.616113744075829"/>
         </collectionViewCell>
     </objects>

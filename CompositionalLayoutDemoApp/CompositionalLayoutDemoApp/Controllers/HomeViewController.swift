@@ -48,6 +48,7 @@ class HomeViewController: UIViewController {
             .nib(DealsCell.self),
             .nib(DotSliderCell.self),
             .nib(CategoriesCell.self),
+            .nib(FeaturedHeaderCell.self),
             .nib(FeaturedCell.self),
         ]
         
@@ -110,6 +111,10 @@ class HomeViewController: UIViewController {
             Section(type: .categories, items: [
                 Item(), Item(), Item(), Item()
             ]),
+            
+            Section(type: .featuredheader, items: [
+                Item()
+            ]), 
             
             Section(type: .featured, items: [
                 Item(), Item(), Item(), Item()

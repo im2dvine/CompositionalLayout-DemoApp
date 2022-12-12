@@ -89,7 +89,7 @@ struct LayoutSectionFactory: LayoutSection {
         
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .groupPaging
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 230, trailing: 0)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 15, bottom: 186, trailing: 15)
         
         return section
     }
@@ -99,13 +99,13 @@ struct LayoutSectionFactory: LayoutSection {
         
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(54))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(27))
         
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
         
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 28, bottom: 18, trailing: 28)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 31, bottom: 24, trailing: 29)
         
         return section
     }
