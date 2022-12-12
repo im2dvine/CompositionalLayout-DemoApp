@@ -18,6 +18,7 @@ class ProductDetailViewController: UIViewController {
             
             switch sectionType {
             case .imageheader: return LayoutSectionFactory.imageheader()
+            case .details: return LayoutSectionFactory.imageheader()
             default: return nil
             }
         }
@@ -35,10 +36,11 @@ class ProductDetailViewController: UIViewController {
         setUpCollectionView()
         configureDataSource()
     }
-
+    
     private func setUpCollectionView() {
         let cells: [RegisterableView] = [
-            .nib(ImageHeaderCell.self)
+            .nib(ImageHeaderCell.self),
+            .nib(DetailsCell.self)
         ]
         
         collectionView.register(cells: cells)
@@ -57,6 +59,9 @@ class ProductDetailViewController: UIViewController {
             case .imageheader:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageHeaderCell", for: indexPath)
                 return cell
+            case .details:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailsCell", for: indexPath)
+                return cell
                 
             default: return nil
                 
@@ -67,8 +72,12 @@ class ProductDetailViewController: UIViewController {
         let sections = [
             Section(type: .imageheader, items: [
                 Item()
+            ]),
+            
+            Section(type: .details, items: [
+                Item()
             ])
-        
+            
         ]
         
         
@@ -78,5 +87,5 @@ class ProductDetailViewController: UIViewController {
         dataSource.apply(snapshot, animatingDifferences: false)
         
     }
-
+    
 }
