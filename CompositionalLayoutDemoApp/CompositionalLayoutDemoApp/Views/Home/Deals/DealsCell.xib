@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6y-Mc-Bvw">
                         <rect key="frame" x="0.0" y="0.0" width="319" height="174"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture1" translatesAutoresizingMaskIntoConstraints="NO" id="KuE-X1-IfB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fashion-portrait-of-black-african-american-man-2021-12-21-02-06-46-utc 1" translatesAutoresizingMaskIntoConstraints="NO" id="KuE-X1-IfB">
                                 <rect key="frame" x="0.0" y="0.0" width="319" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="319" id="4Fl-qr-9MC"/>
@@ -117,7 +117,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="picture1" width="316" height="174"/>
+        <image name="fashion-portrait-of-black-african-american-man-2021-12-21-02-06-46-utc 1" width="310" height="174"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

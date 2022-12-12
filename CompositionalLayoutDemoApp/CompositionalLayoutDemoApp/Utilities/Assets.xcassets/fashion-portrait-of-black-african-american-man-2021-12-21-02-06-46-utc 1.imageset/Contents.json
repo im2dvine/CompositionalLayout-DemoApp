@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "fashion-portrait-of-black-african-american-man-2021-12-21-02-06-46-utc 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "fashion-portrait-of-black-african-american-man-2021-12-21-02-06-46-utc 1@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "fashion-portrait-of-black-african-american-man-2021-12-21-02-06-46-utc 1@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
