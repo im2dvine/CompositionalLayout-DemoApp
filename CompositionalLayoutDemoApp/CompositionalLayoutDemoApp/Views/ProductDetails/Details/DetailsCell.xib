@@ -275,6 +275,14 @@
                             <constraint firstItem="rI3-Ol-kg3" firstAttribute="leading" secondItem="cET-AI-CtU" secondAttribute="leading" constant="157" id="wRz-7j-2aE"/>
                             <constraint firstItem="C1F-Cw-BVF" firstAttribute="top" secondItem="D9G-Uw-yhJ" secondAttribute="bottom" constant="29" id="yW7-jR-GUh"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
