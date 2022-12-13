@@ -15,9 +15,70 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eln-zU-i7B">
+                        <rect key="frame" x="29" y="12" width="93" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="cart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lsF-0N-3xx">
+                                <rect key="frame" x="32" y="21.666666666666664" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.40392156862745099" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="cC6-TB-GmW"/>
+                            <constraint firstAttribute="height" constant="60" id="uqA-fV-Zju"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="1" green="0.40392156862745099" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffq-qe-DhT">
+                        <rect key="frame" x="142" y="12" width="204" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BUY NOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxU-RE-OZC">
+                                <rect key="frame" x="64" y="21" width="77" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16862745098039217" green="0.22352941176470587" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="6q8-qy-bbP"/>
+                            <constraint firstAttribute="width" constant="204" id="hgx-HS-9OQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ffq-qe-DhT" secondAttribute="trailing" constant="29" id="11C-eR-Hob"/>
+                <constraint firstAttribute="bottom" secondItem="eln-zU-i7B" secondAttribute="bottom" constant="13" id="Cvk-q9-xqc"/>
+                <constraint firstAttribute="bottom" secondItem="Ffq-qe-DhT" secondAttribute="bottom" constant="13" id="Lt1-Hj-w3l"/>
+                <constraint firstItem="Ffq-qe-DhT" firstAttribute="leading" secondItem="eln-zU-i7B" secondAttribute="trailing" constant="20" id="MGs-9f-nna"/>
+                <constraint firstItem="Ffq-qe-DhT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="fb6-CC-nWX"/>
+                <constraint firstItem="eln-zU-i7B" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="29" id="opK-vt-wQE"/>
+                <constraint firstItem="eln-zU-i7B" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="wTN-ON-eGN"/>
+            </constraints>
             <point key="canvasLocation" x="70.769230769230774" y="20.616113744075829"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+    </resources>
 </document>
