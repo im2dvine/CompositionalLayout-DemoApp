@@ -81,19 +81,19 @@ struct LayoutSectionFactory: LayoutSection {
     }
     
     static func categories() -> NSCollectionLayoutSection {
+        let fraction: CGFloat = 1.0 / 3.0
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 20)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(190), heightDimension: .absolute(200))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(fraction), heightDimension: .fractionalWidth(fraction))
         
-        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, repeatingSubitem: item, count: 2)
-        group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0)
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+//        group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0)
         
         let section = NSCollectionLayoutSection(group: group)
-        section.orthogonalScrollingBehavior = .groupPaging
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 15, bottom: 186, trailing: 15)
+        section.orthogonalScrollingBehavior = .continuous
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 15, bottom: 100, trailing: 15)
         
         return section
     }

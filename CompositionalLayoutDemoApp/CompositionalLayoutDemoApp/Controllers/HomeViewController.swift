@@ -98,7 +98,7 @@ class HomeViewController: UIViewController {
             Section(type: .dotslider, items:
                         [ Item() ]),
             Section(type: .categories, items:
-                        [ Item(), Item(), Item(), Item() ]),
+                        [ Item(), Item(), Item(), Item(), Item(), Item() ]),
             Section(type: .featuredheader, items:
                         [ Item() ]),
             Section(type: .featured, items:
