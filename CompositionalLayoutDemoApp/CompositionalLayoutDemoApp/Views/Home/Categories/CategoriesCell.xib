@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="150" height="144"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dax-34-cnC">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dax-34-cnC">
                         <rect key="frame" x="0.0" y="0.0" width="150" height="144"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="tshirt.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jxR-70-mjZ">
@@ -67,13 +67,13 @@
                         <constraints>
                             <constraint firstItem="M5e-AU-jmh" firstAttribute="leading" secondItem="dax-34-cnC" secondAttribute="leading" constant="15" id="0Mc-HP-cBm"/>
                             <constraint firstItem="mCN-fW-Ycc" firstAttribute="leading" secondItem="dax-34-cnC" secondAttribute="leading" constant="15" id="8Qc-Oi-MJf"/>
-                            <constraint firstItem="J35-Zo-9oU" firstAttribute="leading" secondItem="M5e-AU-jmh" secondAttribute="trailing" constant="28" id="Jwp-gg-JQV"/>
                             <constraint firstItem="M5e-AU-jmh" firstAttribute="top" secondItem="jxR-70-mjZ" secondAttribute="bottom" constant="13" id="MM2-d8-zJ4"/>
                             <constraint firstItem="jxR-70-mjZ" firstAttribute="top" secondItem="dax-34-cnC" secondAttribute="top" constant="15" id="Qtb-8F-Jd6"/>
                             <constraint firstAttribute="bottom" secondItem="J35-Zo-9oU" secondAttribute="bottom" constant="19" id="TEZ-Dn-Xc7"/>
                             <constraint firstItem="mCN-fW-Ycc" firstAttribute="top" secondItem="M5e-AU-jmh" secondAttribute="bottom" constant="3" id="Vg5-7K-aZ6"/>
                             <constraint firstItem="k9k-iy-yKW" firstAttribute="leading" secondItem="dax-34-cnC" secondAttribute="leading" constant="15" id="ZHG-om-lri"/>
                             <constraint firstItem="jxR-70-mjZ" firstAttribute="leading" secondItem="dax-34-cnC" secondAttribute="leading" constant="15" id="b0O-ag-Azw"/>
+                            <constraint firstAttribute="trailing" secondItem="J35-Zo-9oU" secondAttribute="trailing" constant="-19.329999999999998" id="n7N-ck-sOz"/>
                             <constraint firstItem="k9k-iy-yKW" firstAttribute="top" secondItem="mCN-fW-Ycc" secondAttribute="bottom" id="nn4-N1-ksb"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
