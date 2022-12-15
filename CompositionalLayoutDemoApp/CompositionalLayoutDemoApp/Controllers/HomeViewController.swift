@@ -94,7 +94,7 @@ class HomeViewController: UIViewController {
             Section(type: .searchbar, items:
                         [ Item() ]),
             Section(type: .deals, items:
-                        [ Item(), Item(), Item() ]),
+                        [ Item(), Item(), Item(), Item(), Item() ]),
             Section(type: .dotslider, items:
                         [ Item() ]),
             Section(type: .categories, items:
