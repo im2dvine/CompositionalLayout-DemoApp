@@ -47,7 +47,7 @@
                                 <rect key="frame" x="287" y="53" width="58" height="58"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="blueheart" translatesAutoresizingMaskIntoConstraints="NO" id="ZZp-Q2-e2f">
-                                        <rect key="frame" x="16" y="16" width="26" height="26"/>
+                                        <rect key="frame" x="18" y="18" width="22" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.16862745098039217" green="0.22352941176470587" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
@@ -219,7 +219,7 @@
                                         <rect key="frame" x="130" y="0.0" width="115" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36k Saved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkM-od-q73">
-                                                <rect key="frame" x="23" y="0.0" width="81" height="21"/>
+                                                <rect key="frame" x="21" y="0.0" width="81" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="81" id="Xrt-nZ-8uF"/>
                                                     <constraint firstAttribute="height" constant="21" id="Zuf-b9-fKN"/>
@@ -229,18 +229,18 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="le0-Wt-Dvh">
-                                                <rect key="frame" x="0.0" y="2" width="16" height="16"/>
+                                                <rect key="frame" x="1" y="3" width="14" height="14"/>
                                                 <color key="tintColor" red="0.72549019609999998" green="0.73725490199999999" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="16" id="0Dq-K5-CMQ"/>
-                                                    <constraint firstAttribute="height" constant="16" id="5ox-Gz-312"/>
+                                                    <constraint firstAttribute="width" constant="14" id="0Dq-K5-CMQ"/>
+                                                    <constraint firstAttribute="height" constant="14" id="5ox-Gz-312"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="le0-Wt-Dvh" firstAttribute="leading" secondItem="OQx-31-8WJ" secondAttribute="leading" id="4OP-eR-ZqJ"/>
-                                            <constraint firstItem="hkM-od-q73" firstAttribute="leading" secondItem="le0-Wt-Dvh" secondAttribute="trailing" constant="7" id="9Ga-cc-3lr"/>
-                                            <constraint firstItem="le0-Wt-Dvh" firstAttribute="top" secondItem="OQx-31-8WJ" secondAttribute="top" constant="2" id="ANH-n5-d1Q"/>
+                                            <constraint firstItem="le0-Wt-Dvh" firstAttribute="leading" secondItem="OQx-31-8WJ" secondAttribute="leading" constant="1" id="4OP-eR-ZqJ"/>
+                                            <constraint firstItem="hkM-od-q73" firstAttribute="leading" secondItem="le0-Wt-Dvh" secondAttribute="trailing" constant="6" id="9Ga-cc-3lr"/>
+                                            <constraint firstItem="le0-Wt-Dvh" firstAttribute="top" secondItem="OQx-31-8WJ" secondAttribute="top" constant="3" id="ANH-n5-d1Q"/>
                                             <constraint firstAttribute="bottom" secondItem="hkM-od-q73" secondAttribute="bottom" id="N9w-Gw-lJA"/>
                                             <constraint firstItem="hkM-od-q73" firstAttribute="top" secondItem="OQx-31-8WJ" secondAttribute="top" id="VNB-H1-ASw"/>
                                         </constraints>
