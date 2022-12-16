@@ -20,13 +20,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="318" height="54"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EBZ-RO-0Xf">
-                                <rect key="frame" x="279" y="15.666666666666664" width="24" height="23"/>
-                                <color key="tintColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="279" y="12.666666666666668" width="24" height="29.000000000000004"/>
+                                <color key="tintColor" white="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="4Jf-Hi-H8O"/>
                                     <constraint firstAttribute="width" constant="24" id="6xx-Q4-5yp"/>
                                 </constraints>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search man fashion.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7M-26-How">
                                 <rect key="frame" x="23" y="15" width="151.66666666666666" height="24"/>
