@@ -19,8 +19,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eln-zU-i7B">
                         <rect key="frame" x="29" y="12" width="93" height="60"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="cart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lsF-0N-3xx">
-                                <rect key="frame" x="33" y="17.666666666666664" width="26" height="26"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="cart" translatesAutoresizingMaskIntoConstraints="NO" id="lsF-0N-3xx">
+                                <rect key="frame" x="33" y="17" width="26" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.40392156862745099" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -85,6 +85,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="cart" width="28" height="28"/>
     </resources>
 </document>

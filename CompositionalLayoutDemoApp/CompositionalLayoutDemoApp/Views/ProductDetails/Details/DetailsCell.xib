@@ -126,8 +126,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJe-pg-J0G" userLabel="rating">
                                         <rect key="frame" x="261" y="0.0" width="57" height="25"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bfx-mk-M6C">
-                                                <rect key="frame" x="0.0" y="-0.33333333333333215" width="24" height="24.666666666666664"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="bfx-mk-M6C">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="25"/>
                                                 <color key="tintColor" red="1" green="0.6588235294117647" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="EfN-rV-der"/>
@@ -229,7 +229,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="le0-Wt-Dvh">
-                                                <rect key="frame" x="0.0" y="3.9999999999999991" width="16" height="13"/>
+                                                <rect key="frame" x="0.0" y="2.0000000000000009" width="16" height="16"/>
                                                 <color key="tintColor" red="0.72549019609999998" green="0.73725490199999999" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="16" id="0Dq-K5-CMQ"/>
@@ -299,6 +299,6 @@
     <resources>
         <image name="eye.fill" catalog="system" width="128" height="80"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="star" width="16" height="16"/>
     </resources>
 </document>
