@@ -59,7 +59,7 @@ struct LayoutSectionFactory: LayoutSection {
         
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .groupPaging
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 17, trailing: 12)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 17, trailing: 12)
         
         return section
     }
