@@ -46,8 +46,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQQ-oT-kiK">
                                 <rect key="frame" x="287" y="53" width="58" height="58"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZZp-Q2-e2f">
-                                        <rect key="frame" x="15" y="16" width="28" height="28"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="blueheart" translatesAutoresizingMaskIntoConstraints="NO" id="ZZp-Q2-e2f">
+                                        <rect key="frame" x="16" y="16" width="26" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.16862745098039217" green="0.22352941176470587" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
@@ -198,8 +198,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="eye.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VmB-yI-3Ox">
-                                                <rect key="frame" x="0.0" y="3.9999999999999982" width="16" height="12.000000000000002"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="eye" translatesAutoresizingMaskIntoConstraints="NO" id="VmB-yI-3Ox">
+                                                <rect key="frame" x="0.0" y="2" width="16" height="16"/>
                                                 <color key="tintColor" red="0.72549019607843135" green="0.73725490196078436" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="16" id="YJ2-OK-iTd"/>
@@ -228,8 +228,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="le0-Wt-Dvh">
-                                                <rect key="frame" x="0.0" y="2.0000000000000009" width="16" height="16"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="le0-Wt-Dvh">
+                                                <rect key="frame" x="0.0" y="2" width="16" height="16"/>
                                                 <color key="tintColor" red="0.72549019609999998" green="0.73725490199999999" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="16" id="0Dq-K5-CMQ"/>
@@ -297,8 +297,9 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="eye.fill" catalog="system" width="128" height="80"/>
-        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="blueheart" width="22" height="22"/>
+        <image name="eye" width="16" height="16"/>
+        <image name="heart" width="22" height="22"/>
         <image name="star" width="16" height="16"/>
     </resources>
 </document>
