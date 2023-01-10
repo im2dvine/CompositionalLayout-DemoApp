@@ -53,6 +53,7 @@
 /* Begin PBXFileReference section */
 		1211D92F2940E78200CA9883 /* LayoutSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSection.swift; sourceTree = "<group>"; };
 		1211D9322940F4E500CA9883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CompositionalLayoutDemoApp/Views/Base.lproj/ProductDetail.storyboard; sourceTree = "<group>"; };
+		121432F0296C86080008F892 /* demoJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = demoJson.json; sourceTree = "<group>"; };
 		1225C51929464A9D007C1927 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		1225C51D29464DA0007C1927 /* DotSliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotSliderCell.swift; sourceTree = "<group>"; };
 		1225C51E29464DA0007C1927 /* DotSliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DotSliderCell.xib; sourceTree = "<group>"; };
@@ -234,6 +235,7 @@
 		12A25EC329386929001ECFEE /* CompositionalLayoutDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				121432F0296C86080008F892 /* demoJson.json */,
 				12A25ED8293869A2001ECFEE /* App */,
 				12A25ED9293869B1001ECFEE /* Utilities */,
 				12A25EDC29386A62001ECFEE /* Models */,
