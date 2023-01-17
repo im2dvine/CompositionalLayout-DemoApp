@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "type": "featured",
+        "title": "Title Goes Here",
+        "items": [
+            "id": 1,
+            "title": "",
+            "image": "",
+            "price": "",
+            "rating": ""
+        ]
+    },
+    {
+        "id": 2,
+        "type": "",
+        "title": "Title Goes Here",
+        "items": [
+            "id": 1,
+            "title": "",
+            "image": "",
+            "price": "",
+            "rating": ""
+        ]
+    },
+    {
+        "id": 3,
+        "type": "",
+        "title": "Title Goes Here",
+        "items": [
+            "id": 1,
+            "title": "",
+            "image": "",
+            "price": "",
+            "rating": ""
+        ]
+    },
+]
