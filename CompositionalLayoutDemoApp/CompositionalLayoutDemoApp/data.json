@@ -13,14 +13,21 @@
     },
     {
         "id": 2,
-        "type": "deals",
+        "type": "searchbar",
         "title": "",
         "items": [
             {
                 "id": 2,
                 "image": "",
                 "title": ""
-            },
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "type": "deals",
+        "title": "",
+        "items": [
             {
                 "id": 3,
                 "image": "",
@@ -30,24 +37,31 @@
                 "id": 4,
                 "image": "",
                 "title": ""
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "type": "categories",
-        "title": "",
-        "items": [
+            },
             {
                 "id": 5,
                 "image": "",
                 "title": ""
-            },
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "type": "dotslider",
+        "title": "",
+        "items": [
             {
                 "id": 6,
                 "image": "",
                 "title": ""
-            },
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "type": "categories",
+        "title": "",
+        "items": [
             {
                 "id": 7,
                 "image": "",
@@ -57,14 +71,7 @@
                 "id": 8,
                 "image": "",
                 "title": ""
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "type": "featured",
-        "title": "",
-        "items": [
+            },
             {
                 "id": 9,
                 "image": "",
@@ -74,12 +81,29 @@
                 "id": 10,
                 "image": "",
                 "title": ""
-            },
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "type": "featured",
+        "title": "",
+        "items": [
             {
                 "id": 11,
                 "image": "",
                 "title": ""
+            },
+            {
+                "id": 12,
+                "image": "",
+                "title": ""
+            },
+            {
+                "id": 13,
+                "image": "",
+                "title": ""
             }
         ]
-    },
+    }
 ]
