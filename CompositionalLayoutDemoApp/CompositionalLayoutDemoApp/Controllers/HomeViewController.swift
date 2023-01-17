@@ -1,6 +1,8 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    let sections = Bundle.main.decode([Section].self, from: "data.json")
+    
     private var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
     private var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
     
@@ -13,14 +15,14 @@ class HomeViewController: UIViewController {
             let sectionType = snapshot.sectionIdentifiers[sectionIndex].type
             
             switch sectionType {
-                case .header: return LayoutSectionFactory.header()
-                case .searchbar: return LayoutSectionFactory.searchbar()
-                case .deals: return LayoutSectionFactory.deals()
-                case .dotslider: return LayoutSectionFactory.dotslider()
-                case .categories: return LayoutSectionFactory.categories()
-                case .featuredheader: return LayoutSectionFactory.featuredheader()
-                case .featured: return LayoutSectionFactory.featured()
-                default: return nil
+            case "header": return LayoutSectionFactory.header()
+            case "searchbar": return LayoutSectionFactory.searchbar()
+            case "deals": return LayoutSectionFactory.deals()
+            case "dotslider": return LayoutSectionFactory.dotslider()
+            case "categories": return LayoutSectionFactory.categories()
+            case "featuredheader": return LayoutSectionFactory.featuredheader()
+            case "featured": return LayoutSectionFactory.featured()
+            default: return nil
             }
         }
         return layout
@@ -42,6 +44,8 @@ class HomeViewController: UIViewController {
     }
     
     private func setUpCollectionView() {
+//        collectionView.register(UINib(nibName: "SectionHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseIdentifier)
+        
         let cells: [RegisterableView] = [
             .nib(HeaderCell.self),
             .nib(SearchBarCell.self),
@@ -63,47 +67,45 @@ class HomeViewController: UIViewController {
             let sectionType = snapshot.sectionIdentifiers[indexPath.section].type
             
             switch sectionType {
-            case .header:
+            case "header":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeaderCell", for: indexPath)
                 return cell
-            case .searchbar:
+            case "searchbar":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchBarCell", for: indexPath)
                 return cell
-            case .deals:
+            case "deals":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DealsCell", for: indexPath)
                 return cell
-            case .dotslider:
+            case "dotslider":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DotSliderCell", for: indexPath)
                 return cell
-            case .categories:
+            case "categories":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCell", for: indexPath)
                 return cell
-            case .featuredheader:
+            case "featuredheader":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedHeaderCell", for: indexPath)
                 return cell
-            case .featured:
+            case "featured":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCell", for: indexPath)
                 return cell
             default: return nil
             }
         }
         
-        let sections = [
-            Section(type: .header, items:
-                        [ Item() ]),
-            Section(type: .searchbar, items:
-                        [ Item() ]),
-            Section(type: .deals, items:
-                        [ Item(), Item(), Item(), Item(), Item() ]),
-            Section(type: .dotslider, items:
-                        [ Item() ]),
-            Section(type: .categories, items:
-                        [ Item(), Item(), Item(), Item() ]),
-            Section(type: .featuredheader, items:
-                        [ Item() ]),
-            Section(type: .featured, items:
-                        [ Item(), Item(), Item(), Item() ])
-        ]
+//                let sections = [
+//                    Section(id: 0, type: "deals", title: "", items: [
+//                        Item(id: 0, image: "", title: ""),
+//                        Item(id: 1, image: "", title: ""),
+//                        Item(id: 2, image: "", title: "") ]),
+//                    Section(id: 1, type: "categories", title: "", items: [
+//                        Item(id: 0, image: "", title: ""),
+//                        Item(id: 1, image: "", title: ""),
+//                        Item(id: 2, image: "", title: "") ]),
+//                    Section(id: 2, type: "featured", title: "", items: [
+//                        Item(id: 0, image: "", title: ""),
+//                        Item(id: 1, image: "", title: ""),
+//                        Item(id: 2, image: "", title: "") ])
+//                ]
         
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
         snapshot.appendSections(sections)
@@ -112,10 +114,10 @@ class HomeViewController: UIViewController {
     }
 }
 
- extension HomeViewController: UICollectionViewDelegate {
-     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "ProductDetail", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ProductDetailViewController") as! ProductDetailViewController
-        navigationController?.pushViewController(vc, animated: true)
-    }
+extension HomeViewController: UICollectionViewDelegate {
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let storyboard: UIStoryboard = UIStoryboard(name: "ProductDetail", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "ProductDetailViewController") as! ProductDetailViewController
+//        navigationController?.pushViewController(vc, animated: true)
+//    }
 }

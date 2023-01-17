@@ -1,10 +1,7 @@
 import UIKit
 
 class FeaturedCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+    static let kind = String(describing: FeaturedCell.self)
+    static let reuseIdentifier = String(describing: FeaturedCell.self)
+    static let nib = UINib(nibName: String(describing: FeaturedCell.self), bundle: nil)
 }

@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "type": "header",
+        "title": "",
+        "items": [
+            {
+                "id": 1,
+                "image": "",
+                "title": ""
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "type": "deals",
+        "title": "",
+        "items": [
+            {
+                "id": 2,
+                "image": "",
+                "title": ""
+            },
+            {
+                "id": 3,
+                "image": "",
+                "title": ""
+            },
+            {
+                "id": 4,
+                "image": "",
+                "title": ""
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "type": "categories",
+        "title": "",
+        "items": [
+            {
+                "id": 5,
+                "image": "",
+                "title": ""
+            },
+            {
+                "id": 6,
+                "image": "",
+                "title": ""
+            },
+            {
+                "id": 7,
+                "image": "",
+                "title": ""
+            },
+            {
+                "id": 8,
+                "image": "",
+                "title": ""
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "type": "featured",
+        "title": "",
+        "items": [
+            {
+                "id": 9,
+                "image": "",
+                "title": ""
+            },
+            {
+                "id": 10,
+                "image": "",
+                "title": ""
+            },
+            {
+                "id": 11,
+                "image": "",
+                "title": ""
+            }
+        ]
+    },
+]

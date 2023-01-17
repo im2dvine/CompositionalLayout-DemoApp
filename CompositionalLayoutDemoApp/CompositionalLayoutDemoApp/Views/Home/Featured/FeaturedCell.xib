@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeaturedCell" id="gTV-IL-0wX" customClass="FeaturedCell" customModule="CompositionalLayoutDemoApp" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="FeaturedCell" customModule="CompositionalLayoutDemoApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="206" height="290"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -159,20 +159,6 @@
                             <constraint firstItem="Pwg-Gc-7EY" firstAttribute="top" secondItem="AtP-I1-vFG" secondAttribute="bottom" constant="12" id="hfK-QS-Bd5"/>
                             <constraint firstAttribute="trailing" secondItem="trX-lI-TFe" secondAttribute="trailing" id="uu1-QX-w2T"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <integer key="value" value="18"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.070000000000000007" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                <real key="value" value="0.0"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                <real key="value" value="0.0"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
@@ -184,7 +170,6 @@
                 <constraint firstAttribute="trailing" secondItem="SnH-Zq-ufV" secondAttribute="trailing" id="z3H-al-tjW"/>
             </constraints>
             <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                     <real key="value" value="18"/>
                 </userDefinedRuntimeAttribute>

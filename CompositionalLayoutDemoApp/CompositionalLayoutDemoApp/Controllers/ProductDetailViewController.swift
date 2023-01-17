@@ -1,6 +1,8 @@
 import UIKit
 
 class ProductDetailViewController: UIViewController {
+    let sections = Bundle.main.decode([Section].self, from: "data.json")
+    
     private var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
     private var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
     
@@ -13,11 +15,11 @@ class ProductDetailViewController: UIViewController {
             let sectionType = snapshot.sectionIdentifiers[sectionIndex].type
             
             switch sectionType {
-            case .imageheader: return LayoutSectionFactory.imageheader()
-            case .details: return LayoutSectionFactory.details()
-            case .variant: return LayoutSectionFactory.variant()
-            case .specifications: return LayoutSectionFactory.specifications()
-            case .cart: return LayoutSectionFactory.cart()
+            case "imageheader": return LayoutSectionFactory.imageheader()
+            case "details": return LayoutSectionFactory.details()
+            case "variant": return LayoutSectionFactory.variant()
+            case "specifications": return LayoutSectionFactory.specifications()
+            case "cart": return LayoutSectionFactory.cart()
             default: return nil
             }
         }
@@ -58,32 +60,32 @@ class ProductDetailViewController: UIViewController {
             let sectionType = snapshot.sectionIdentifiers[indexPath.section].type
             
             switch sectionType {
-            case .imageheader:
+            case "imageheader":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageHeaderCell", for: indexPath)
                 return cell
-            case .details:
+            case "details":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailsCell", for: indexPath)
                 return cell
-            case .variant:
+            case "variant":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VariantCell", for: indexPath)
                 return cell
-            case .specifications:
+            case "specifications":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SpecificationsCell", for: indexPath)
                 return cell
-            case .cart:
+            case "cart":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CartCell", for: indexPath)
                 return cell
             default: return nil
             }
         }
         
-        let sections = [
-            Section(type: .imageheader, items: [ Item() ]),
-            Section(type: .details, items: [ Item() ]),
-            Section(type: .variant, items: [ Item() ]),
-            Section(type: .specifications, items: [ Item() ]),
-            Section(type: .cart, items: [ Item() ])
-        ]
+//        let sections = [
+//            Section(type: "imageheader", items: [ Item() ]),
+//            Section(type: "details", items: [ Item() ]),
+//            Section(type: "variant", items: [ Item() ]),
+//            Section(type: "specifications", items: [ Item() ]),
+//            Section(type: "cart", items: [ Item() ])
+//        ]
         
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
         snapshot.appendSections(sections)

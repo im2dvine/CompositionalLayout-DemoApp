@@ -16,6 +16,13 @@ protocol LayoutSection {
 }
 
 struct LayoutSectionFactory: LayoutSection {
+    static func createSectionHeader(with height: CGFloat = 50) -> NSCollectionLayoutBoundarySupplementaryItem {
+        let size = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .estimated(height))
+        let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: size, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        
+        return header
+    }
+    
     static func header() -> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         
@@ -27,6 +34,9 @@ struct LayoutSectionFactory: LayoutSection {
         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 23, trailing: 0)
         
         let section = NSCollectionLayoutSection(group: group)
+        
+//        let header = createSectionHeader()
+//        section.boundarySupplementaryItems = [header]
         
         return section
     }
