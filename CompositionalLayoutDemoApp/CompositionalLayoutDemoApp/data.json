@@ -86,14 +86,21 @@
     },
     {
         "id": 6,
-        "type": "featured",
+        "type": "featuredheader",
         "title": "",
         "items": [
             {
                 "id": 11,
                 "image": "",
                 "title": ""
-            },
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "type": "featured",
+        "title": "",
+        "items": [
             {
                 "id": 12,
                 "image": "",
@@ -101,6 +108,11 @@
             },
             {
                 "id": 13,
+                "image": "",
+                "title": ""
+            },
+            {
+                "id": 14,
                 "image": "",
                 "title": ""
             }
