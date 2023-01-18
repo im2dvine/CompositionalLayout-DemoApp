@@ -30,17 +30,17 @@
         "items": [
             {
                 "id": 3,
-                "image": "",
+                "image": "deal1",
                 "title": ""
             },
             {
                 "id": 4,
-                "image": "",
+                "image": "deal2",
                 "title": ""
             },
             {
                 "id": 5,
-                "image": "",
+                "image": "deal3",
                 "title": ""
             }
         ]
@@ -103,18 +103,18 @@
         "items": [
             {
                 "id": 12,
-                "image": "",
-                "title": ""
+                "image": "featured1",
+                "title": "Slides and Socks"
             },
             {
                 "id": 13,
-                "image": "",
-                "title": ""
+                "image": "featured2",
+                "title": "Happy Face Beanie"
             },
             {
                 "id": 14,
-                "image": "",
-                "title": ""
+                "image": "featured4",
+                "title": "Bear Ears Bucket Hat"
             }
         ]
     }
