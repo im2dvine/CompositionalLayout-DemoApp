@@ -33,6 +33,14 @@ class HomeViewController: UIViewController {
         initialize()
     }
     
+    private func configure<T: SelfConfiguringCell>(_ cellType: T.Type, with media: Item, for indexPath: IndexPath) -> T {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseIdentifier, for: indexPath) as? T else {
+                fatalError("Unable to dequeue \(cellType)")
+            }
+            cell.configure(with: media)
+            return cell
+        }
+    
     func initialize() {
         setUpCollectionView()
         configureDataSource()
@@ -74,8 +82,9 @@ class HomeViewController: UIViewController {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchBarCell", for: indexPath)
                 return cell
             case "deals":
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DealsCell", for: indexPath)
-                return cell
+//                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DealsCell", for: indexPath)
+//                return cell
+                return self.configure(DealsCell.self, with: item, for: indexPath)
             case "dotslider":
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DotSliderCell", for: indexPath)
                 return cell
@@ -86,8 +95,9 @@ class HomeViewController: UIViewController {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedHeaderCell", for: indexPath)
                 return cell
             case "featured":
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCell", for: indexPath)
-                return cell
+//                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCell", for: indexPath)
+//                return cell
+                return self.configure(FeaturedCell.self, with: item, for: indexPath)
             default: return nil
             }
         }
